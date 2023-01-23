@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>نظام المصادقة</title>
+		<link rel="icon" href="imgs/athentication-page.svg" />
+		<link rel="stylesheet" href="css/master.css" />
+		<link rel="stylesheet" href="css/wrapper/wrapper.css" />
+		<link rel="stylesheet" href="css/wrapper/flex.css" />
+		<link rel="stylesheet" href="css/wrapper/padding-margin.css" />
+		<link rel="stylesheet" href="css/framework.css" />
+		<link rel="stylesheet" href="css/athentication.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Rubik&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body data-theme="light" style="background-color: var(--white);" class="no-select">
+		<style>
+
+			@media (max-width: 75rem) {
+				body > div {
+					width: 80% !important;
+				}
+				
+				body > div > div:nth-child(2) {
+					grid-template-columns: minmax(25rem, 35rem) minmax(15rem,20rem) !important;
+				}
+			}
+
+			@media (max-width: 54rem) {
+				body > div {
+					margin-top: 5% !important;
+					width: 100vw !important;
+				}
+
+				body > div > div:nth-child(2) {
+					grid-template-columns: 33rem !important;
+					grid-template-rows: auto auto;
+				}
+			}
+
+			@media (max-width: 50rem) {
+				body > div > div:nth-child(1) h1 {
+					font-size: 1.5rem !important;
+				}
+
+				body .logo {
+					top: 0.875rem !important;
+				}
+
+				body .logo > img {
+					height: 4.25rem !important;
+				}
+			}
+
+			@media (max-width: 35rem) {
+				
+				body > div > div:nth-child(2) {
+					grid-template-columns: minmax(auto, 35rem) !important;
+				}
+			}
+
+			@media (max-width: 30rem) {
+				body > div > div:nth-child(1) > div:nth-child(2) > div {
+					display: none;
+				}
+			}
+
+		</style>
+
+		<div style=" margin: auto; margin-top: 10%; max-width: max-content; width: 100vw;">
+			<div class="between hcenter" style="padding:1rem;">
+				<div style="display: flex; justify-content: start; padding-right: 1rem;">
+					<svg
+						version="1.2"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 256 256"
+						width="2.7916rem"
+						height="2.7916rem"
+						style="margin: 0.5rem 0; margin-left: 1rem"
+					>
+						<g id="athentication system">
+							<path
+								class="e0"
+								d="m0 50c0-27.6 22.4-50 50-50h156c27.6 0 50 22.4 50 50v156c0 27.6-22.4 50-50 50h-156c-27.6 0-50-22.4-50-50z"
+							/>
+							<path
+								class="e1"
+								d="m112.5 121c-15.2 0-27.5-12.3-27.5-27.5 0-15.2 12.3-27.5 27.5-27.5 15.2 0 27.5 12.3 27.5 27.5 0 15.2-12.3 27.5-27.5 27.5z"
+							/>
+							<path
+								class="e1"
+								d="m65 179.5v-21.6c0-18.4 12.5-25.9 30.9-25.9h34c18.4 0 29.5 7.6 29.5 26v21.5z"
+							/>
+							<path
+								class="e2"
+								d="m141 116.5c0-2.5 2-3.5 4.5-3.5l19.5-0.1v-13.3c0-2 0.6-3.6 2.6-3.5h0.7c1.2 0 2.4 0.5 3.3 1.3l17.6 15.5c2.1 2 2.1 3.3 0.1 5.3l-17.7 16.3c-0.9 0.9-2.1 1.4-3.4 1.4l-0.6 0.1c-2 0-2.6-1.6-2.6-3.6v-12.3h-19.5c-2.5-0.1-4.5-1.1-4.5-3.6z"
+							/>
+						</g>
+					</svg>
+					<h1 style="margin: 0.5rem 0; color: var(--dark); font-size: 1.7rem;">نظام المصادقة.</h1>
+				</div>
+				<div class="between hcenter" style="padding: 1rem;">
+					<div
+						style="
+							border-left: 0.0625rem solid var(--light);
+							margin-left: 1.1rem;
+						"
+					>
+						<a
+							href="../en/athentication/athentication.html"
+							style="
+								color: var(--lighter-dark);
+								padding: 0 1rem;
+								transition: var(--trans-2) ease;
+								font-family: 'Rubik';
+							"
+							>English</a
+						>
+					</div>
+					<theme_changer>
+						<div></div>
+						<div>
+							<span class="light"></span>
+							<span class="light sl"></span>
+						
+							<span class="light"></span>
+							<span class="light sl"></span>
+						
+							<span class="light"></span>
+							<span class="light sl"></span>
+						
+							<span class="light"></span>
+							<span class="light sl"></span>
+						</div>
+					</theme_changer>
+				</div>
+			</div>
+			<div class="middle" style="padding: 0 1rem 1rem; display: grid; grid-template-columns: 35rem 20rem; gap: 1rem;">
+				<form action="" style="padding: 1rem; border: 0.0625rem solid var(--light); border-radius: 0.625rem;">
+					<div style="display: flex; margin: 0.5rem 0.5rem 1rem; color: var(--lighter-dark); font-size: 1.1rem;">
+						<div id="sform_selector" style="border-left: 0.0625rem solid var(--light); padding: 0 0.25rem 0 1rem; cursor: pointer; color: var(--dark);">طالب</div>
+						<div id="eform_selector" style="padding: 0 1rem; cursor: pointer;">موظف</div>
+					</div>
+					<div id="form_changeable_input" style="position: relative">
+						<input
+							class="full-width"
+							type="text"
+							name="sid"
+							maxlength="9"
+						/>
+						<span class="lbl trans-100">الرقم الجامعي</span>
+					</div>
+					<div style="position: relative">
+						<input
+							class="full-width"
+							type="password"
+							name="pass"
+							maxlength="20"
+						/>
+						<span class="lbl trans-100">كلمة المرور</span>
+						<kbd
+							style="
+								position: absolute;
+								top: 1.25rem;
+								left: 1rem;
+								opacity: 0%;
+								visibility: hidden;
+							"
+							>Caps</kbd
+						>
+					</div>
+					<p style="color: var(--light-dark);">لا تقم بمشاركة هذه الاستعلامات مع احد.</p>
+					<div>
+						<input
+							class="full-width"
+							type="submit"
+							value="تسجيل الدخول"
+						/>
+						<a href="">نسيت رقم المستخدم او كلمة المرور؟</a>
+						<br />
+						<a href="">لا تمتلك رقم المستخدم؟ فعل حسابك.</a>
+					</div>
+				</form>
+				<div style="color: var(--light-dark); padding: 1rem; border: 0.0625rem solid var(--light);" class="xx-rad">
+					<h2 style="margin-top: 0.5rem;">ملاحظات مهمة.</h2>
+					<ul>
+						<li class="hover-darker p-16 mtd-6 xx-rad trans-50">
+							رقم المستخدم للطلاب هو الرقم الجامعي
+						</li>
+						<hr class="mlr-16" />
+						<li class="hover-darker p-16 mtd-6 xx-rad trans-50">
+							كلمة المرور للخريجين هي رقم الهوية
+						</li>
+						<hr class="mlr-16" />
+						<li class="hover-darker p-16 mtd-6 xx-rad trans-50">
+							تاكد من كتابة رقم المستخدم وكلمة المرور بشكل صحيح
+						</li>
+						<hr class="mlr-16" />
+						<li class="hover-darker p-16 mtd-6 xx-rad trans-50">
+							انتبه لزر الأحرف الكبيرة
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/athentication.js"></script>
+		<script src="js/themeChanger.js"></script>
+		<script>
+			let sform_selector = document.getElementById("sform_selector");
+			let eform_selector = document.getElementById("eform_selector");
+			eform_selector.onclick = function(e){
+				for (let input of inputs) {
+					removeErrors(input, input.parentElement.querySelector(".lbl"));
+				}
+				eform_selector.style.color = "var(--dark)";
+				sform_selector.style.color = "var(--lighter-dark)";
+				e.preventDefault();
+				let form_changeable_input = document.getElementById("form_changeable_input");
+				let input = form_changeable_input.querySelector("input");
+				let lbl = input.parentElement.querySelector(".lbl");
+				lbl.innerText = "اسم الموظف";
+				input.setAttribute("name", "ename");
+				input.removeEventListener("keyup", KeyboardEvent);
+				input.addEventListener("keyup", (e) => {
+					if (isTypeKey(e.keyCode)) {
+						if (input.value === "")
+							addError(input, lbl, "اسم الموظف مطلوب*");
+						else removeErrors(input, lbl);
+					}
+				});
+				input.onblur = function () {
+					if (input.value === "") {
+						addError(input, lbl, "اسم الموظف مطلوب*");
+						lbl.className = "lbl trans-100";
+					}
+				};
+			}
+			sform_selector.onclick = function(e){
+				for (let input of inputs) {
+					removeErrors(input, input.parentElement.querySelector(".lbl"));
+				}
+				sform_selector.style.color = "var(--dark)";
+				eform_selector.style.color = "var(--lighter-dark)";
+				e.preventDefault();
+				let form_changeable_input = document.getElementById("form_changeable_input");
+				let input = form_changeable_input.querySelector("input");
+				let lbl = input.parentElement.querySelector(".lbl");
+				lbl.innerText = "الرقم الجامعي";
+				input.setAttribute("name", "sid");
+				if (input.value !== "" && input.value.length !== 9)
+					addError(input, lbl, "الرقم الجامعي يجب ان يتكون من 9 ارقام");
+				input.removeEventListener("keyup", KeyboardEvent);
+				input.addEventListener("keyup", (e) => {
+					if (isTypeKey(e.keyCode)) {
+						if (input.value === "")
+							addError(input, lbl, "الرقم الجامعي مطلوب*");
+						else if (input.value.length !== 9)
+							addError(
+								input,
+								lbl,
+								"الرقم الجامعي يجب ان يتكون من 9 ارقام"
+							);
+						else removeErrors(input, lbl);
+					}
+				});
+				input.onblur = function () {
+					if (input.value === "") {
+						addError(input, lbl, "الرقم الجامعي مطلوب*");
+						lbl.className = "lbl trans-100";
+					}else if (input.value.length !== 9)
+						addError(
+							input,
+							lbl,
+							"الرقم الجامعي يجب ان يتكون من 9 ارقام"
+						);
+				};
+			}
+		</script>
+	</body>
+</html>
