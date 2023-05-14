@@ -67,6 +67,7 @@ body[data-theme="dark"] {
     color: var(--light-dark);
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar {
